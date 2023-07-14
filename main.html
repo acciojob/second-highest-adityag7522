@@ -9,8 +9,27 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
 			
+		let n = arr.length;	
+		let larg = Number.MIN_VALUE;
+		let larg2 = Number.MIN_VALUE;
+		let index = -1;
+
+		for(let i=0; i<n; i++) {
+             if (larg <arr[i]) {
+				 larg = arr [i];
+				 index = i;
+			 }
+		}
+		for (let i=0; i<n; i++) {
+			
+			if (larg2 < arr[i] && i != index) {
+				larg2 = arr [i];
+			}
+			
+		}
+			return larg2;
+
 		}
 
 		function Main() {
