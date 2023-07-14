@@ -28,17 +28,17 @@
 			}
 			
 		}
-			return larg2;
+			return larg2 == Number.MIN_VALUE ? '-Infinity' : larg2;
 
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
-			var arr = [];
-			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
-			}
-			alert(secondHighest(arr));
+			// var n = prompt("Enter the number of elements");
+			// var arr = [];
+			// for (var i = 0; i < n; i++) {
+			// 	arr[i] = prompt("Enter element " + (i+1));
+			// }
+			// alert(secondHighest(arr));
 		}
 		Main();
 	</script>
